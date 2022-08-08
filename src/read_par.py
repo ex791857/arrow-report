@@ -8,6 +8,8 @@ for col in df.columns:
 
 df.columns = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k']
 
+df = df.iloc[0:1000, :]
+
 displayhook(df)
 
 # df.to_parquet("/root/arrow-report/input/sample-out.parquet")
